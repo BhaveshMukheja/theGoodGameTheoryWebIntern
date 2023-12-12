@@ -2,9 +2,11 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+//importing the components
+
 import BeerList from "./Components/BeerLists";
 import BeerDetails from "./Components/BeerDetails";
-// import Header from './Components/Header'
 
 function App() {
   return (
