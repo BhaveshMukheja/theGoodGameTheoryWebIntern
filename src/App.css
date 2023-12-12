@@ -1,38 +1,171 @@
-.App {
+body{
+  background-color: #c9c9c913;
+}
+
+.beer-list {
+  text-align: center;
+  padding: 20px;
+  font-family:'Alegreya', 'Yanone Kaffeesatz', 'Abril Fatface', 'Zilla Slab', sans-serif,  serif;
+}
+
+input{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-center{
+  text-align: center;
+  height: 100px;
+  color: white;
+  background-image: url('./Images/bg-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.text-center h1{
+  font-size: 75px;
+  font-weight: 200;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.form-control{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+
+.beer-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+
+
+.beer-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 450px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  background-color:#c9c9c92a;
+  /* transition: text-spacing 1s ease-in; */
+}
+
+.beer-card h2{
+  margin-top: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.beer-card p{
+font-style: italic;
+font-size: large;
+
+}
+
+.btn{
+  background-color: rgba(143, 32, 139, 0.758);
+  color: white;
+  transition:  0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out
+}
+
+
+/* some animation on hover */
+.beer-card:hover{
+  transform: translatey(-5px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.btn:hover{
+  background-color: rgba(255, 255, 255, 0.758);
+  border-color: rgba(143, 32, 139, 0.758);
+
+}
+
+
+
+.beer-card img {
+  width: 100px;
+  height: 200px;
+  object-fit: contain;
+}
+
+
+
+.beer-details{
+  padding: 20px;
+  font-family: 'Abril Fatface', 'Zilla Slab', sans-serif,  serif;
+
+}
+
+.beer-image img{
+    height: 450px;
+    
+}
+
+
+.left{
+  width: 30%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+.left div{
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.beer-name{
+  font-size: 30px;
+  font-weight:500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.beer-tagline{
+font-style: italic;
+font-weight: 550
+}
+
+.left p{
+  font-style: italic;
+  margin-bottom: 0;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.left span{
+  font-weight: 500;
+  font-style: none;
+}
+
+
+.middle{
+  width: 60%;
+
+}
+
+.intro{
+  width: 80%;
+}
+
+li{
+  width: 100%;
+}
+
+.right{
+  /* background-color: aqua; */
+  width: 15%;
+}
+
+.heading{
+  font-weight: bold;
+}
+
+
+.table-color{
+background-color:  rgba(171, 171, 171, 0.168);
 }
