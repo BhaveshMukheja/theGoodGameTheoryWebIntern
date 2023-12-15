@@ -139,7 +139,7 @@ function BeerDetails() {
         {/* The right Flex-box with a table consisting of rest of the info */}
 
         <div className="d-flex right">
-          <table class="table">
+          <table classname="table">
             <tbody>
               <tr className="table-color">
                 <td className="heading">abv:</td>
